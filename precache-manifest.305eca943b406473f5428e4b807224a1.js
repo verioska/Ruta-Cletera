@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d03e74c748f84892559e99d1d560929",
+    "revision": "05d5762e95514a326a68c5eab3705fd7",
     "url": "/Ruta-Cletera/index.html"
   },
   {
-    "revision": "d8af0c2759da10e694e5",
+    "revision": "ec1fcf70053bba974903",
     "url": "/Ruta-Cletera/static/css/main.ba49ec77.chunk.css"
   },
   {
-    "revision": "2e0129063922e3bb197a",
-    "url": "/Ruta-Cletera/static/js/2.b41502e9.chunk.js"
+    "revision": "2315f74ce3c99316133d",
+    "url": "/Ruta-Cletera/static/js/2.3310f33a.chunk.js"
   },
   {
-    "revision": "d8af0c2759da10e694e5",
-    "url": "/Ruta-Cletera/static/js/main.c2a4d614.chunk.js"
+    "revision": "ec1fcf70053bba974903",
+    "url": "/Ruta-Cletera/static/js/main.5528bea4.chunk.js"
   },
   {
     "revision": "abdd14a58981000fb1a8",
