@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import '../Footer/Footer.css'
+import React, { Component } from './node_modules/react';
+import './Footer.css'
 import User from '../User/User'
 class Footer extends Component{
     // constructor(props) {
@@ -43,6 +43,7 @@ class Footer extends Component{
                     <User/>
                 } */}
         </div>
+
         )
     }
 }

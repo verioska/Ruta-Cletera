@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+
+import React, { Component } from './node_modules/react';
 
 
 
@@ -124,7 +125,9 @@ import React, { Component } from 'react';
 
   render() {
     return (
+
       <div ref="here-map" style={{ width: '100%', height: '660px', background: '#00BCD4' }}>
+
       </div>
     );
   }
