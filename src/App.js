@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react';
-import Map from './components/Map';
+import Map from './components/Map/Map';
 import Search from './components/Search/Search';
+import Footer from './components/Footer/Footer';
 
 
 class App extends Component {
@@ -74,14 +75,15 @@ class App extends Component {
       ...this.state,
       startPoint: {
         ...this.startPoint
-
-      },
-      endPoint: {
+        
+    },
+    endPoint: {
         ...this.endPoint
-       
-      },
-   
-    })
+        
+    },
+    
+})
+
 
   }
 
@@ -99,7 +101,7 @@ class App extends Component {
      
         />
        <Search  coordinates={this. functionCoordinates}/>
-
+       <Footer/>
       </div>
     );
   }}

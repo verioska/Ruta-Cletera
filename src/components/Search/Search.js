@@ -16,14 +16,18 @@ class Search extends Component {
   functionStart(event){
     this.setState({
         ...this.state,
-        start: event.target.value
+        start: event.target.value,
+
+        
+
     })
 
   }
   functionEnd(event){
     this.setState({
         ...this.state,
-        end: event.target.value
+        end: event.target.value,
+       
     })
 
   }
@@ -32,9 +36,9 @@ class Search extends Component {
   render() {
       return (
           <div className="App">
-             <input onChange={(event) => this.functionStart(event)}  value={this.state.start} placeholder="Inicio"></input>
+             <input onChange={(event) => this.functionStart(event) }  value={this.state.start} placeholder="Inicio"></input>
              <input onChange={(event) => this.functionEnd(event)}  value={this.state.end}placeholder="Fin"></input>
-             <button onClick={() => this.props.coordinates(this.state.start, this.state.end)}>Buscar ruta</button>
+             <button onClick={() => this.props.coordinates(this.state.start, this.state.end) }>Buscar ruta</button>
           </div>
       );
   }
