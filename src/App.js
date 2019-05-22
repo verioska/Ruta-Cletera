@@ -134,11 +134,7 @@ functionMap(){
 
         />}
 
-       {/* <Footer onClik={this.functionUser}
-       map={this.functionMap}/>
-        
-
-     />} */}
+      
 
        <Footer onClik={this.functionUser}
        map={this.functionMap}/>
