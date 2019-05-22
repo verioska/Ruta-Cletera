@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+
+import User from './Components/User/User'
 import Map from './Components/Map/Map';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
+
 
 
 
@@ -13,6 +16,8 @@ class App extends Component {
     this.state = {
       app_id: "dPPKrUEpsqpYWIAVcmLD",
       app_code: "4Uosgp7aDFaZc0VoxXZTEg",
+      user:false,
+      map:false,
       startPoint: {
         lat: '',
         long: '',
@@ -25,10 +30,34 @@ class App extends Component {
     }
 
     this.functionCoordinates = this.functionCoordinates.bind(this);
-   
+    this.functionUser = this.functionUser.bind(this);
+    this.functionMap = this.functionMap.bind(this);
   }
 
+  functionUser(){
+    this.setState({
+    ...this.state,
+    user:true,
+    map:false
+  });
+  //  
+}
+
+functionMap(){
+  this.setState({
+  ...this.state,
+  map:true,
+  user:false
+});
+//  
+}
+
   componentDidMount() {
+    this.setState({
+      ...this.state,
+      map:true,
+      user:false
+    });
     if (navigator.geolocation) {
       console.log(navigator.geolocation)
       navigator.geolocation.getCurrentPosition(
@@ -93,6 +122,11 @@ class App extends Component {
       <div className="App">
 
         <Navbar  coordinates={this.functionCoordinates}/>
+        {this.state.user &&
+                
+                <User/>
+            }
+                {this.state.map &&
         <Map
           app_id={this.state.app_id}
           app_code={this.state.app_code}
@@ -101,10 +135,10 @@ class App extends Component {
           zoom="13"
           startPoint={this.state.startPoint}
           endPoint={this.state.endPoint}
-     
-        />
+     />}
 
-        <Footer/>
+       <Footer onClik={this.functionUser}
+       map={this.functionMap}/>
 
      
 

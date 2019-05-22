@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default class Map extends React.Component {
+
+
+
+ class Map extends Component {
   constructor(props) {
     super(props);
 
@@ -129,3 +132,6 @@ export default class Map extends React.Component {
     );
   }
 }
+
+
+export default Map;
