@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import Map from './components/Map/Map';
-import User from './components/User/User'
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
+
+import User from './Components/User/User'
+import Map from './Components/Map/Map';
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer'
+
+
 
 
 class App extends Component {
@@ -131,12 +134,11 @@ functionMap(){
           zoom="13"
           startPoint={this.state.startPoint}
           endPoint={this.state.endPoint}
-     
-        />}
+     />}
 
        <Footer onClik={this.functionUser}
        map={this.functionMap}/>
-        
+
        
 
       </div>

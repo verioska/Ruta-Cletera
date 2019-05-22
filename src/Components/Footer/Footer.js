@@ -43,6 +43,7 @@ class Footer extends Component{
                     <User/>
                 } */}
         </div>
+
         )
     }
 }

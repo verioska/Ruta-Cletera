@@ -34,29 +34,35 @@ class Navbar extends Component {
       return (
           <div className="navbar">
 
-<nav className="navbar navbar-inverse">
-  <div className="container-fluid">
-    <div className="navbar-header">
-    <a class="navbar-brand" href="#">RutaCletera</a>
+ <nav className="navbar navbar-inverse"> 
 
-      <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      <i className="fas fa-search"></i>
-      </button>
+<a class="navbar-brand" href="#">RutaCletera</a>
+<div className="container-fluid">
+<div className="navbar-header">  
+    
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <i className="fas fa-search"></i>
+    </button>
 
     <div>
       <i className="fas fa-ellipsis-v"></i>
     </div>
 
-    </div>
-    
+
     <div className="collapse navbar-collapse" id="myNavbar">
       
-        <input onChange={(event) => this.functionStart(event)}  value={this.state.start} placeholder="Inicio"></input>
-        <input onChange={(event) => this.functionEnd(event)}  value={this.state.end}placeholder="Fin"></input>
-        <button onClick={() => this.props.coordinates(this.state.start, this.state.end)}>Buscar ruta</button>
+       
+        <input className="inputRoute" onChange={(event) => this.functionStart(event)}  value={this.state.start} placeholder="Punto de Partida"></input>
+        <input className="inputRoute" onChange={(event) => this.functionEnd(event)}  value={this.state.end}placeholder="Destino"></input>
+       
+
+        <div className="buttonSearch">
+        <button id="search" onClick={() => this.props.coordinates(this.state.start, this.state.end)}>Buscar ruta</button>
+        </div>
     </div>
 
-  </div>
+  </div>  
+  </div>  
 </nav>
            
           </div>

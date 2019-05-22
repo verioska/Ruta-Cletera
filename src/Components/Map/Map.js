@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 
 
+
  class Map extends Component {
   constructor(props) {
     super(props);
@@ -124,7 +125,9 @@ import React, { Component } from 'react';
 
   render() {
     return (
+
       <div ref="here-map" style={{ width: '100%', height: '660px', background: '#00BCD4' }}>
+
       </div>
     );
   }
