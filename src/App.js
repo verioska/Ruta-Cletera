@@ -65,7 +65,7 @@ functionMap(){
           });
         },
         (error) => {
-          // alert(error.message)
+          
           this.setState({
             ...this.state,
             error: error.message
