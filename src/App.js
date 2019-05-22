@@ -3,6 +3,7 @@ import Map from './Components/Map/Map';
 import User from './Components/User/User'
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
+import Login from './Components/Login/Login'
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
       app_code: "4Uosgp7aDFaZc0VoxXZTEg",
       user:false,
       map:false,
+      login:false,
       startPoint: {
         lat: '',
         long: '',
@@ -28,13 +30,16 @@ class App extends Component {
     this.functionCoordinates = this.functionCoordinates.bind(this);
     this.functionUser = this.functionUser.bind(this);
     this.functionMap = this.functionMap.bind(this);
+  
   }
+
 
   functionUser(){
     this.setState({
     ...this.state,
     user:true,
-    map:false
+    map:false,
+ 
   });
   //  
 }
@@ -43,7 +48,8 @@ functionMap(){
   this.setState({
   ...this.state,
   map:true,
-  user:false
+  user:false,
+
 });
 //  
 }
@@ -116,27 +122,31 @@ functionMap(){
   render() {
     return (
       <div className="App">
+      
 
+       
+      
         <Navbar  coordinates={this.functionCoordinates}/>
         {this.state.user &&
                 
                 <User/>
             }
-                {this.state.map &&
-        <Map
-          app_id={this.state.app_id}
-          app_code={this.state.app_code}
-          lat="-33.4489"
-          lng="-70.6693"
-          zoom="13"
-          startPoint={this.state.startPoint}
-          endPoint={this.state.endPoint}
-     
-
-        />}
+        
+        {this.state.map &&
+                
+                <Map
+                  app_id={this.state.app_id}
+                  app_code={this.state.app_code}
+                  lat="-33.4489"
+                  lng="-70.6693"
+                  zoom="13"
+                  startPoint={this.state.startPoint}
+                  endPoint={this.state.endPoint}/>
+              
+            }      
 
       
-
+      
        <Footer onClik={this.functionUser}
        map={this.functionMap}/>
 
