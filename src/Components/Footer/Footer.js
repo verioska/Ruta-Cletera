@@ -5,7 +5,7 @@ class Footer extends Component{
         return(
             <div>
             <footer className="footer">
-                <hr></hr>
+                
             <div className="container" >
             <div className="row">
                 <i className="far fa-newspaper icon"></i>

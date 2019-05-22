@@ -5,13 +5,14 @@
     width: 100%;
     height: 56px;
     color:gray;
+    border-top: grey 1px solid
     
 }
 
 .far.fa-newspaper,.fas.fa-map-marked-alt,.far.fa-user{
     margin: 5px;
     font-size: 30px;
-    margin-top: -2px;
+    margin-top: 11px;
     
 }
 .row{
@@ -21,11 +22,11 @@ width: 100%;
 margin: 0 auto;
 }
 
-.icon{
+/* .icon{
     height: auto;
     width: 100%;
     z-index: 3;
     cursor: pointer;
     display: block;
     text-align: center;
-}
+} */

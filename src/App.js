@@ -1,8 +1,8 @@
-
 import React, { Component } from 'react';
 import Map from './components/Map/Map';
-import Search from './components/Search/Search';
+
 import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
 
 
 class App extends Component {
@@ -90,6 +90,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
+        <Navbar  coordinates={this.functionCoordinates}/>
         <Map
           app_id={this.state.app_id}
           app_code={this.state.app_code}
@@ -100,11 +102,15 @@ class App extends Component {
           endPoint={this.state.endPoint}
      
         />
-       <Search  coordinates={this. functionCoordinates}/>
+       
        <Footer/>
+        
+       
+
       </div>
     );
   }}
   export default App;
+
 
 

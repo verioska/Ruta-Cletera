@@ -1,5 +1,5 @@
 import React from 'react';
-
+// import { Marker } from 'react-leaflet';
 
 export default class Map extends React.Component {
   constructor(props) {
@@ -48,9 +48,7 @@ export default class Map extends React.Component {
   componentDidUpdate() {
  
     if (this.props.startPoint.lat !== "" && this.props.endPoint.lat !== "") {
-      if (this.routeLine) {
-        this.map.removeObjects([this.routeLine, this.startMarker, this.endMarker]);
-      }
+    
       this.routingParameters = {
         'mode': 'fastest;pedestrian',
         'waypoint0': "geo!" + this.props.startPoint.lat + "," + this.props.startPoint.long,
@@ -125,7 +123,7 @@ export default class Map extends React.Component {
 
   render() {
     return (
-      <div ref="here-map" style={{ width: '100%', height: '400px', background: 'grey' }}>
+      <div ref="here-map" style={{ width: '100%', height: '660px', background: '#00BCD4' }}>
       </div>
     );
   }
