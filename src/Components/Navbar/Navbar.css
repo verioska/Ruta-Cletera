@@ -1,2 +1,12 @@
+.container-fluid{
+    width:100%;
+}
 
+.navbar-brand{
+    color: #00BCD4;
+}
+
+.inputRute{
+    border: grey 0.5px solid;
+}
 

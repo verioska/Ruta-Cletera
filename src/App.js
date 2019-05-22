@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Map from './Components/Map/Map';
 // import Search from './Components/Search/Search';
 import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer'
 
 
 class App extends Component {
@@ -100,7 +101,7 @@ class App extends Component {
           endPoint={this.state.endPoint}
      
         />
-        
+        <Footer/>
        
 
       </div>
