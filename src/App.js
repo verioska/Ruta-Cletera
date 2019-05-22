@@ -4,6 +4,7 @@ import User from './Components/User/User'
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -138,6 +139,8 @@ functionMap(){
 
        <Footer onClik={this.functionUser}
        map={this.functionMap}/>
+
+     
 
        
 
