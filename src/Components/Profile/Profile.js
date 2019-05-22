@@ -4,16 +4,31 @@ class Profile extends Component{
     render(){
         return(
             <div>
-               <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+               <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a className="navbar-brand" href=".#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href=".#">Home</a></li>
+        <li><a href=".#">Page 1</a></li>
+        <li><a href=".#">Page 2</a></li> 
+        <li><a href=".#">Page 3</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href=".#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href=".#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
-  </nav>
-
+  </div>
+</nav>
+    
                
 
             </div>

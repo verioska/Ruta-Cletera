@@ -36,7 +36,7 @@ class Navbar extends Component {
 
  <nav className="navbar navbar-inverse"> 
 
-<a class="navbar-brand" href="#">RutaCletera</a>
+<a class="navbar-brand" href=".#">RutaCletera</a>
 <div className="container-fluid">
 <div className="navbar-header">  
     

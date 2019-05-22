@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Map from './Components/Map/Map';
 import Navbar from './Components/Navbar/Navbar';
-import Footer from './Components/Footer/Footer'
+import Footer from './Components/Footer/Footer';
+
 
 
 
@@ -104,6 +105,8 @@ class App extends Component {
         />
 
         <Footer/>
+
+     
 
        
 
