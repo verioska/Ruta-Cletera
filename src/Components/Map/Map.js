@@ -123,7 +123,7 @@ export default class Map extends React.Component {
 
   render() {
     return (
-      <div ref="here-map" style={{ width: '100%', height: '400px', background: 'grey' }}>
+      <div ref="here-map" style={{ width: '100%', height: '660px', background: '#00BCD4' }}>
       </div>
     );
   }

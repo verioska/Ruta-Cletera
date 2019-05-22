@@ -39,12 +39,12 @@ class Navbar extends Component {
     <div className="navbar-header">
     <a class="navbar-brand" href="#">RutaCletera</a>
 
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      <i class="fas fa-search"></i>
+      <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <i className="fas fa-search"></i>
       </button>
 
     <div>
-      <i class="fas fa-ellipsis-v"></i>
+      <i className="fas fa-ellipsis-v"></i>
     </div>
 
     </div>
