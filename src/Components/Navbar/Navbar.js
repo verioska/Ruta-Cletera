@@ -36,17 +36,18 @@ class Navbar extends Component {
 
  <nav className="navbar navbar-inverse"> 
 
-<a class="navbar-brand" href=".#">RutaCletera</a>
+
+ <a href=".#"><img src="https://i.ibb.co/yk5DgYT/Group-1-1.png" alt="Logotype" border="0"/></a>
 <div className="container-fluid">
 <div className="navbar-header">  
     
 
-    <div id="ab">
-    <button  id="ab" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <div id="options">
+    <button  type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
     <span><i className="fas fa-search"></i></span>
     </button>
 
-    <span><i className="fas fa-ellipsis-v"></i></span>
+    {/* <span><i className="fas fa-ellipsis-v"></i></span> */}
     </div>
 
 

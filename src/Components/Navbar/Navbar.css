@@ -34,6 +34,16 @@
     
 }
 
-#ab{
+#options{
+    color: grey;
+}
+
+.navbar-toggle{
     float: right;
+    color:grey;
+}
+
+.responsive-img{
+    width: 150px;
+    height: 40px;
 }
