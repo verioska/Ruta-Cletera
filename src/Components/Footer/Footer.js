@@ -1,26 +1,8 @@
 import React, { Component } from 'react';
 import '../Footer/Footer.css'
-// import User from '../User/User'
-class Footer extends Component{
-    // constructor(props) {
-    //     super(props);
-    
-    //     this.state = {
-    //      user:false
-    
-    //     }
-    
-    //     this.functionUser = this.functionUser.bind(this);
-       
-    //   }
 
-    //   functionUser(){
-    //       this.setState({
-    //       ...this.state,
-    //       user:true
-    //     });
-    //     //  
-    //   }
+class Footer extends Component{
+    
     render(){
         return(
             <div>
@@ -38,10 +20,7 @@ class Footer extends Component{
             </div>
             </div>
             </footer> 
-                {/* {this.state.user &&
-                
-                    <User/>
-                } */}
+              
         </div>
 
         )

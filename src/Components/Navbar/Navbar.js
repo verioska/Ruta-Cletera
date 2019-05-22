@@ -40,12 +40,14 @@ class Navbar extends Component {
 <div className="container-fluid">
 <div className="navbar-header">  
     
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+    <div id="ab">
+    <button  id="ab" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
     <span><i className="fas fa-search"></i></span>
     </button>
-    
-      <span><i className="fas fa-ellipsis-v"></i></span>
-  
+
+    <span><i className="fas fa-ellipsis-v"></i></span>
+    </div>
 
 
     <div className="collapse navbar-collapse" id="myNavbar">
