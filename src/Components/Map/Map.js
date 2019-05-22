@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Marker } from 'react-leaflet';
 
 export default class Map extends React.Component {
   constructor(props) {
@@ -123,7 +122,9 @@ export default class Map extends React.Component {
 
   render() {
     return (
-      <div ref="here-map" style={{ width: '100%', height: '550px', background: '#00BCD4' }}>
+
+      <div ref="here-map" style={{ width: '100%', height: '660px', background: '#00BCD4' }}>
+
       </div>
     );
   }

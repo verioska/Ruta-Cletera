@@ -37,34 +37,32 @@ class Navbar extends Component {
  <nav className="navbar navbar-inverse"> 
 
 <a class="navbar-brand" href="#">RutaCletera</a>
-
-  <div className="container-fluid">
-
-   <div className="navbar-header">  
+<div className="container-fluid">
+<div className="navbar-header">  
     
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <i className="fas fa-search"></i>
+    </button>
 
-        
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      <i className="fas fa-search"></i>
-      </button>
-
-   
+    <div>
       <i className="fas fa-ellipsis-v"></i>
     </div>
 
-   
 
     <div className="collapse navbar-collapse" id="myNavbar">
       
-        <input className="inputRute" onChange={(event) => this.functionStart(event)}  value={this.state.start} placeholder="Punto de Partida"></input>
-        <input className="inputRute" onChange={(event) => this.functionEnd(event)}  value={this.state.end}placeholder="Destino"></input>
-        
+       
+        <input className="inputRoute" onChange={(event) => this.functionStart(event)}  value={this.state.start} placeholder="Punto de Partida"></input>
+        <input className="inputRoute" onChange={(event) => this.functionEnd(event)}  value={this.state.end}placeholder="Destino"></input>
+       
+
         <div className="buttonSearch">
-        <button onClick={() => this.props.coordinates(this.state.start, this.state.end)}>Buscar ruta</button>
+        <button id="search" onClick={() => this.props.coordinates(this.state.start, this.state.end)}>Buscar ruta</button>
         </div>
     </div>
 
-  </div>
+  </div>  
+  </div>  
 </nav>
            
           </div>
