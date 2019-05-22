@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import Map from './components/Map';
 import Search from './components/Search/Search';
@@ -101,76 +102,7 @@ class App extends Component {
 
       </div>
     );
-  }
-}
-
-export default App;
+  }}
+  export default App;
 
 
-
-// import React, { Component } from 'react';
-// import Map from './Map';
-// import './App.css';
-
-// class App extends Component {
-//   constructor(props) {
-//       super(props);
-
-//       this.state = {
-//           theme: 'normal.day',
-//       }
-
-//       this.onChange = this.onChange.bind(this);
-//   }
-//   componentDidMount() {
-//     if (navigator.geolocation) {
-//       console.log(navigator.geolocation)
-//       navigator.geolocation.getCurrentPosition(
-//         (position) => {
-//           this.setState({
-//             ...this.state,
-//             lat: position.coords.latitude,
-//             long: position.coords.longitude,
-//             error: null,
-//           });
-//         },
-//         (error) => {
-//           // alert(error.message)
-//           this.setState({
-//             ...this.state,
-//             error: error.message
-//           })
-//         }
-//       );
-//     }
-//   }
-
-//   onChange(evt) {
-//       evt.preventDefault();
-
-//       var change = evt.target.id;
-//       this.setState({
-//           "theme": change,
-//       });
-//   }
-
-//   render() {
-//       return (
-//           <div className="App">
-//               < Map
-//                   app_id="dPPKrUEpsqpYWIAVcmLD"
-//                   app_code="4Uosgp7aDFaZc0VoxXZTEg"
-//                   lat="42.345978"
-//                   lng="-83.0405"
-//                   zoom="13"
-//                   theme={ this.state.theme }
-//               />
-//               {/* <ThemeSelector changeTheme={ this.onChange } /> */}
-//           </div>
-//       );
-//   }
-// }
-
-
-
-// export default App;
