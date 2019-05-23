@@ -1,4 +1,4 @@
-.container-fluid{
+/* .container-fluid{
     width:100%;
 }
 
@@ -51,14 +51,83 @@
 .navbar-toggle{
     /* float: right;
     color:grey; */
-        /* float: right; */
+        /* float: right; 
         color: grey;
         margin-left: 269px;
         border: none;
         background-color: white;
+}*/
+
+.responsive-img{
+    width: 150px;
+    height: 40px;
+} */
+.container-fluid{
+    width:100%;
+}
+
+.navbar-brand{
+    color: #00BCD4;
+}
+
+.inputRoute{
+    border: grey 0.5px solid;
+    margin:5px;
+    width: 270px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.buttonSearch{
+    background: #00BCD4;
+    width: 270px;
+    height: 2rem;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin:0;
+    margin-top:10px;
+    margin-left: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#search{
+    color: #fff;
+    background-color: #00BCD4;
+    border: none;
+
+    
+}
+
+#options{
+    color: grey;
+    position: inline;
+    margin-top: -24px;
+}
+
+.collapse.show {
+   
+    margin-top: 13px;
+}
+
+.navbar-toggle{
+    
+    color: grey;
+    margin-left: 290px;
+    border: none;
+    background-color: white;
 }
 
 .responsive-img{
     width: 150px;
     height: 40px;
+}
+
+.navbar.navbar-inverse{
+    background-color: #fff;
+    width: 100%;
 }
