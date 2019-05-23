@@ -8,8 +8,9 @@ class Share extends Component{
         
         return(
             <div >
-            <img className="imgShare" src="https://i.ibb.co/Fb34MFX/routacity.png" alt="routacity" border="0"/>
-            <p className="tittleShare">Que quieres compartir?</p>
+                <img className="imgRoute" src="https://i.ibb.co/MnXX4D0/ruta.jpg" alt="ruta" border="0"/>
+           
+            <p className="tittleShare">Tu ruta ha sido guardada</p>
         </div>
 
         )

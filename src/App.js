@@ -3,7 +3,7 @@ import Map from './Components/Map/Map';
 import Profile from './Components/Profile/Profile'
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
-import  RouteSave from './Components/RouteSave/RouteSave'
+import  FormSave from './Components/FormSave/FormSave'
 import Share from './Components/Share/Share'
 import News from './Components/News/News'
 import Modal from './Components/Modal/Modal'
@@ -23,6 +23,7 @@ class App extends Component {
       share:false,
       news:false,
       modal:false,
+      finalize:false,
       startPoint: {
         lat: '',
         long: '',
@@ -41,9 +42,24 @@ class App extends Component {
     this.functionNews = this.functionNews.bind(this);
     this.functionModal = this.functionModal.bind(this);
     this.functionCloseModal = this.functionCloseModal.bind(this);
-    this. functionGuardar = this. functionGuardar.bind(this);
+    this.functionGuardar = this.functionGuardar.bind(this);
+    this. functionfinalize = this. functionfinalize.bind(this);
   }
 
+  functionfinalize(){
+    this.setState({
+      ...this.state,
+      modal:false,
+      share:false,
+      user:false,
+      map:false,
+      btnguardar:false,
+      news:false,
+      finalize:true,
+     
+   
+    });
+  }
   functionGuardar(){
     this.setState({
       ...this.state,
@@ -52,6 +68,7 @@ class App extends Component {
       user:false,
       map:false,
       btnguardar:true,
+      news:false,
      
    
     });
@@ -64,6 +81,7 @@ class App extends Component {
       user:false,
       map:false,
       btnguardar:true,
+      news:false,
    
     });
 
@@ -76,6 +94,7 @@ class App extends Component {
       user:false,
       map:true,
       login:false,
+      news:true,
    
     });
 
@@ -232,10 +251,10 @@ functionMap(){
               
             }  
              {this.state.btnguardar && 
-             < RouteSave/>   }
+             < FormSave finalize={this.functionfinalize}/>   }
 
-            {/* {this.state.share && 
-            < Share/>   } */}
+             {this.state.finalize && 
+            <Share/>   } 
 
             {this.state.news && 
             < News/>   }
