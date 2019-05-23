@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Map from './Components/Map/Map';
-import User from './Components/User/User'
+import Profile from './Components/Profile/Profile'
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 
@@ -120,7 +120,7 @@ functionMap(){
         <Navbar  coordinates={this.functionCoordinates}/>
         {this.state.user &&
                 
-                <User/>
+                <Profile/>
             }
                 {this.state.map &&
         <Map

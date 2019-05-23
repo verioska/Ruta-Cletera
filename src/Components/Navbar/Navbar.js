@@ -32,7 +32,7 @@ class Navbar extends Component {
 
   render() {
       return (
-          <div className="navbar">
+          // <div className="navbar">
 
  <nav className="navbar navbar-inverse"> 
 
@@ -65,7 +65,7 @@ class Navbar extends Component {
   </div>  
 </nav>
            
-          </div>
+          // </div>
       );
   }
 }
