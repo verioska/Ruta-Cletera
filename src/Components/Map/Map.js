@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Map.css'
 
 
 
@@ -125,10 +126,24 @@ class Map extends Component {
 
  render() {
    return (
+   <div>
 
-     <div ref="here-map" style={{ width: '100%', height: '660px', background: '#00BCD4' }}>
-
+     <div id="map" ref="here-map" style={{ width: '100%', height: '700px', background: '#00BCD4' }}>
+            <a href="#" class="float" id="menu-share">
+        <i class="fa fa-share my-float"></i>
+        </a>
+        <ul>
+        <li><a href="#">
+        <i class="fas fa-save"></i>
+        </a></li>
+        <li><a href="#">
+        <i className="fas fa-share-alt"></i>
+        </a></li>
+        
+        </ul>
      </div>
+
+   </div>
    );
  }
 }

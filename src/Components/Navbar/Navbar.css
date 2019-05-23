@@ -30,17 +30,32 @@
 }
 
 #search{
-    color:#fff;
+    color: #fff;
+    background-color: #00BCD4;
+    border: none;
+
     
 }
 
 #options{
     color: grey;
+    position: inline;
+    margin-top: -24px;
+}
+
+.collapse.show {
+   
+    margin-top: 13px;
 }
 
 .navbar-toggle{
-    float: right;
-    color:grey;
+    /* float: right;
+    color:grey; */
+        /* float: right; */
+        color: grey;
+        margin-left: 269px;
+        border: none;
+        background-color: white;
 }
 
 .responsive-img{
