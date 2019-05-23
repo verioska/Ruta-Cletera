@@ -131,3 +131,11 @@
     background-color: #fff;
     width: 100%;
 }
+
+.fas.fa-search{
+    font-size: 20px;
+}
+
+#logo{
+    margin-bottom: 5px;
+}

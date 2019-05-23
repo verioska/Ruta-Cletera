@@ -38,15 +38,13 @@ z-index:-1;
     margin: 0 auto;
     margin-top: 30px;
     background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: left center;
     text-align: center;
     font-family: open sans-serif;
     font-size: 18px;
     color: #212121;
 }
 
-#myRoutes{
+/* #myRoutes{
     background-image: url('https://i.ibb.co/92vXgTF/floppy-disk-1.png');
     
 }
@@ -54,5 +52,13 @@ z-index:-1;
 #lastRoutes{
     background-image: url('https://i.ibb.co/bLCbHjy/route-1.png');
     
+} */
+
+#lastRouteImg{
+    margin-right: 10px;
+}
+
+#saveImg{
+    margin-right: 10px;
 }
 
