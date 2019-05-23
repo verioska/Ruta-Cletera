@@ -10,14 +10,16 @@ class Profile extends Component{
           
             
             <div className="header-profile">
-            <i class="fas fa-user-circle"></i>
+            {/* <i class="fas fa-user-circle"></i> */}
+            <a href=".#"><img className="userImage" src="https://i.ibb.co/sQNBr7s/Whats-App-Image-2019-05-22-at-6-44-06-PM.jpg" 
+            alt="userImage" border="0"/></a>
             </div>
 
-            {/* <div id="routesSave">
-            <i class="fas fa-route"></i>
-            <p>Ultimos viajes</p>
-            </div> */}
-              
+            <div id="profileRoutes">
+            <button id="lastRoutes">ULTIMOS VIAJES</button>
+            <button id="myRoutes">RUTAS GUARDADAS</button>
+
+            </div>
     
                
 

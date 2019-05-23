@@ -14,12 +14,45 @@ z-index:-1;
     text-align: center;
 }
 
-.fas.fa-user-circle{
+.userImage{
     display:flex;
-    font-size: 80px;
     z-index: 0;
     justify-content: center;
     margin:0 auto;
     margin-top: 250px;
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+}
+
+#profileRoutes{
+    margin-top: 250px;
+}
+
+#myRoutes, #lastRoutes{
+    width: 300px;
+    height: 60px;
+    border: 0.5px #b6b2b2 solid;
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-align: center;
+    font-family: open sans-serif;
+    font-size: 18px;
+    color: #212121;
+}
+
+#myRoutes{
+    background-image: url('https://i.ibb.co/92vXgTF/floppy-disk-1.png');
+    
+}
+
+#lastRoutes{
+    background-image: url('https://i.ibb.co/bLCbHjy/route-1.png');
+    
 }
 
