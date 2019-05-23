@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Ruta-Cletera/static/css/main.a9c26dae.chunk.css",
-    "main.js": "/Ruta-Cletera/static/js/main.7e06da4e.chunk.js",
-    "main.js.map": "/Ruta-Cletera/static/js/main.7e06da4e.chunk.js.map",
+    "main.css": "/Ruta-Cletera/static/css/main.8319c2d9.chunk.css",
+    "main.js": "/Ruta-Cletera/static/js/main.cc62b73b.chunk.js",
+    "main.js.map": "/Ruta-Cletera/static/js/main.cc62b73b.chunk.js.map",
     "runtime~main.js": "/Ruta-Cletera/static/js/runtime~main.ac44f26f.js",
     "runtime~main.js.map": "/Ruta-Cletera/static/js/runtime~main.ac44f26f.js.map",
-    "static/js/2.b86a40f6.chunk.js": "/Ruta-Cletera/static/js/2.b86a40f6.chunk.js",
-    "static/js/2.b86a40f6.chunk.js.map": "/Ruta-Cletera/static/js/2.b86a40f6.chunk.js.map",
+    "static/js/2.f235cb99.chunk.js": "/Ruta-Cletera/static/js/2.f235cb99.chunk.js",
+    "static/js/2.f235cb99.chunk.js.map": "/Ruta-Cletera/static/js/2.f235cb99.chunk.js.map",
     "index.html": "/Ruta-Cletera/index.html",
-    "precache-manifest.4b6ef4c9746271d640cd4089b88a6d64.js": "/Ruta-Cletera/precache-manifest.4b6ef4c9746271d640cd4089b88a6d64.js",
+    "precache-manifest.3c59d0ba9efd3968aa754615188c6209.js": "/Ruta-Cletera/precache-manifest.3c59d0ba9efd3968aa754615188c6209.js",
     "service-worker.js": "/Ruta-Cletera/service-worker.js",
-    "static/css/main.a9c26dae.chunk.css.map": "/Ruta-Cletera/static/css/main.a9c26dae.chunk.css.map"
+    "static/css/main.8319c2d9.chunk.css.map": "/Ruta-Cletera/static/css/main.8319c2d9.chunk.css.map"
   }
 }

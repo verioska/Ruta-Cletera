@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Ruta-Cletera/precache-manifest.4b6ef4c9746271d640cd4089b88a6d64.js"
+  "/Ruta-Cletera/precache-manifest.3c59d0ba9efd3968aa754615188c6209.js"
 );
 
 self.addEventListener('message', (event) => {
