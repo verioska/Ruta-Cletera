@@ -1,17 +1,26 @@
-.img{
-    width: 100%;
-    height: 289px;
-    margin-top: 73px;
-}
-.tittle{
-    font-size: 24px;
-    text-align: center;
-    margin: 23px;
-    color: #00BCD4;
+.save{
+    margin-top: 30px;
 }
 
-.imgShare {
-     width: 100%;
-    margin-left: -15px;
+#saveRoute{
+    width: 80%;
+    height: 200px;
+    border: rgb(150, 148, 148) 0.5px solid;
+    margin-top: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.imgMap{
+    width: 100%;
+    height: 150px;
+}
+
+.far.fa-share-square{
+    color:#00BCD4;
+    font-size: 25px;
+    margin-left: 120px;
+   
 }
 

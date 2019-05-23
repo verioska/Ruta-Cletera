@@ -4,7 +4,7 @@ import Profile from './Components/Profile/Profile'
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import  RouteSave from './Components/RouteSave/RouteSave'
-import Share from './Components/Share/Share'
+// import Share from './Components/Share/Share'
 import News from './Components/News/News'
 import Modal from './Components/Modal/Modal'
 
@@ -23,6 +23,7 @@ class App extends Component {
       share:false,
       news:false,
       modal:false,
+      btnRouteSave: false,
       startPoint: {
         lat: '',
         long: '',
@@ -41,7 +42,21 @@ class App extends Component {
     this.functionNews = this.functionNews.bind(this);
     this.functionModal = this.functionModal.bind(this);
     this.functionCloseModal = this.functionCloseModal.bind(this);
-    this. functionGuardar = this. functionGuardar.bind(this);
+    this.functionGuardar = this.functionGuardar.bind(this);
+    this.seeRouteSave=this.seeRouteSave.bind(this);
+  }
+
+  seeRouteSave(){
+    this.setState({
+      ...this.state,
+      btnRouteSave:true,
+      user:false,
+      map:false,
+      btnguardar:false,
+      share:false,
+      news:false,
+      modal:false,
+    })
   }
 
   functionGuardar(){
@@ -52,6 +67,9 @@ class App extends Component {
       user:false,
       map:false,
       btnguardar:true,
+      news:false,
+      btnRouteSave: false
+
      
    
     });
@@ -64,6 +82,9 @@ class App extends Component {
       user:false,
       map:false,
       btnguardar:true,
+      news:false,
+      btnRouteSave: false,
+
    
     });
 
@@ -76,6 +97,8 @@ class App extends Component {
       user:false,
       map:true,
       login:false,
+      btnRouteSave: false,
+
    
     });
 
@@ -91,6 +114,8 @@ class App extends Component {
     login:false,
     modal:false,
     btnguardar:false,
+    btnRouteSave: false
+
  
   });
   //  
@@ -120,6 +145,9 @@ class App extends Component {
     news:false,
     modal:false,
     btnguardar:false,
+    btnRouteSave: false,
+
+
  
   });
   //  
@@ -212,8 +240,11 @@ functionMap(){
         <Navbar  coordinates={this.functionCoordinates}/>
         {this.state.user &&
                 
-                <Profile/>
+                <Profile
+                btnSaveRoute={this.seeRouteSave}/>
             }
+
+            {this.state.btnRouteSave && <RouteSave/>}
         
         {this.state.map && 
                 
