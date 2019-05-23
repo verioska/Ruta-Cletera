@@ -4,6 +4,7 @@ import Profile from './Components/Profile/Profile'
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import  RouteSave from './Components/RouteSave/RouteSave'
+import Share from './Components/Share/Share'
 
 
 
@@ -17,6 +18,7 @@ class App extends Component {
       user:false,
       map:false,
       login:false,
+      share:false,
       startPoint: {
         lat: '',
         long: '',
@@ -32,8 +34,20 @@ class App extends Component {
     this.functionUser = this.functionUser.bind(this);
     this.functionMap = this.functionMap.bind(this);
     this.functionLogin = this.functionLogin.bind(this);
+    this.functionShare = this.functionShare.bind(this);
   }
 
+  functionShare(){
+    this.setState({
+    ...this.state,
+    share:true,
+    user:false,
+    map:false,
+    login:false,
+ 
+  });
+  //  
+}
 
   functionUser(){
     this.setState({
@@ -41,6 +55,7 @@ class App extends Component {
     user:true,
     map:false,
     login:false,
+    share:false
  
   });
   //  
@@ -52,6 +67,7 @@ functionLogin(){
   login:true,
   user:false,
   map:false,
+  share:false
  
 
 });
@@ -156,11 +172,16 @@ functionMap(){
                   zoom="13"
                   startPoint={this.state.startPoint}
                   endPoint={this.state.endPoint}
-                  login={this.functionLogin}/>
+                  login={this.functionLogin}
+                  share={this.functionShare}/>
               
             }  
              {this.state.login && 
              < RouteSave/>   }
+
+            {this.state.share && 
+                            < Share/>   }
+             
 
       
       

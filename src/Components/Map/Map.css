@@ -76,17 +76,16 @@ ul li a{
 }
 .btn{
     margin-bottom: 45px;
-    margin-right: -31px;
-    padding-top: 8px;
-    font-size: 30px;
-    margin-right: -6px;
+    padding-top: 11px;
+    font-size: 25px;
+    margin-right: -5px;
     
 }
 
-.fas.fa-share-alt{
-    padding-top: 15px;
-    font-size: 30px;
-    margin-right: 0px;
+.far.fa-share-square{
+    padding-top: 18px;
+    font-size: 25px;
+    margin-right: -8px;
 }
 
  ul:hover{
@@ -138,6 +137,6 @@ a#menu-share:hover > i{
     to {transform: rotate(0deg);}
 }
 
-.fas.fa-share-alt{
+.far.fa-share-square{
     margin-bottom: 20px
 }
