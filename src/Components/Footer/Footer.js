@@ -10,7 +10,7 @@ class Footer extends Component{
                 
             <div className="container" >
             <div className="row">
-                <i className="far fa-newspaper icon"></i>
+                <i  onClick={this.props.news} className="far fa-newspaper icon"></i>
                 <i onClick={this.props.map}  className="fas fa-map-marked-alt icon"></i>
                 <i onClick={this.props.onClik} className="far fa-user icon"></i>
                
