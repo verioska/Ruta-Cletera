@@ -16,7 +16,7 @@ class Profile extends Component{
             </div>
 
             <div id="profileRoutes">
-              <button onClick={this.props.btnSaveRoute} id="myRoutes"><img id="saveImg" src="https://i.ibb.co/92vXgTF/floppy-disk-1.png" alt="saveIcon"/>RUTAS GUARDADAS</button>
+              <button className="button"onClick={this.props.btnSaveRoute} id="myRoutes"><img id="saveImg" src="https://i.ibb.co/92vXgTF/floppy-disk-1.png" alt="saveIcon"/>Rutas Guardadas</button>
             </div>
 
             <div id="lastRoute">

@@ -19,7 +19,7 @@ class News extends Component{
                 <div className="footerImg">
                     <p className="textLabel">Ruta turistica</p>
                     <img id="iconTuristic" className="iconImg" src="https://i.ibb.co/GC6zqgG/cycling-4-1.png" alt=""/>
-                    <img className="iconImg" src="https://i.ibb.co/98QLg0Z/parking-1.png" alt=""/>
+                    <img id="iconParkin" className="iconImg" src="https://i.ibb.co/98QLg0Z/parking-1.png" alt=""/>
                     
                 </div>
 
@@ -34,7 +34,7 @@ class News extends Component{
                 <div>
                     <p className="textLabel">Problemas en la via</p>
                     <img id="iconBrokenRoute"className="iconIMg" src="https://i.ibb.co/rv30Qdv/Group-11.png" alt=""/>
-                    <img className="iconImg" src="https://i.ibb.co/jrj7rdq/map-2.png" alt=""/>
+                    
 
                 </div>
 
