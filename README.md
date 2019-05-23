@@ -67,8 +67,7 @@ Los resultados de nuestro testeo lo puedes encontrar en el siguiente enlace:
 
 Luego de los cambios realizados, se iteró sobre el diseño y arquitectura de la información en nuestro prototipo, que puedes revisar a continuación:
 
-<iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FeeciET0MpW89zogI1Kprq1Rm%2FUntitled%3Fnode-id%3D72%253A0%26scaling%3Dscale-down" allowfullscreen></iframe>
-
+[Segunda iteración prototipo navegable](https://www.figma.com/proto/eeciET0MpW89zogI1Kprq1Rm/Untitled?node-id=72%3A0&scaling=scale-down)
 
 
 
