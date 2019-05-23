@@ -131,18 +131,18 @@ class Map extends Component {
      <div id="map" ref="here-map" style={{ width: '100%', height: '700px', background: '#00BCD4' }}>
 
         <a href=".#" className="float" id="menu-share">
-        <i  class="fa fa-share my-float"></i>
-        </a>
-        <ul>
-        <li  className="btnIcon"><a href=".#">
-        <i onClick={this.props.login} className="fas fa-save btn"></i>
-        </a></li>
-        <li><a href=".#">
-        <i className="fas fa-share-alt "></i>
+        <i class="far fa-stop-circle"></i>
 
-        </a></li>
-        
-        </ul>
+        </a>
+        {/* <ul>
+          <li  className="btnIcon">
+            <a href=".#"><i onClick={this.props.login} className="fas fa-save btn"></i></a>
+          </li>
+        <li>
+          <a href=".#"><i onClick={this.props.share} class="far fa-share-square"></i></a>
+        </li>
+      
+      </ul> */}
      </div>
 
    </div>
