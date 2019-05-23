@@ -13,6 +13,7 @@ En esta oportunidad <strong>Here</strong> nos propone el desafío de crear una h
 
 
 <strong>Integrantes:</strong> Johanna Goenaga FE | Verioska Ramirez FE | Francisca Mora UX
+<strong>Planificación: </strong> [Plataforma Trello](https://trello.com/b/pkn6zR5K/hackaton-here)
 
 <br>
 <br>
