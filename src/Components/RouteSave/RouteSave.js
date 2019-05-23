@@ -19,7 +19,7 @@ class RouteSave extends Component {
 
                     <div className="footerMap">
                         <p className="textLabel">Ruta turistica</p>
-                        <i class="far fa-share-square"></i>
+                        <i onClick={this.props.btnShare} class="far fa-share-square"></i>
 
                     </div>
 
@@ -33,7 +33,7 @@ class RouteSave extends Component {
 
                     <div className="footerMap">
                         <p className="textLabel">Ruta diaria</p>
-                        <i id="iconShareSquare"class="far fa-share-square"></i>
+                        <i onClick={this.props.btnShare} id="iconShareSquare"class="far fa-share-square"></i>
 
                     </div>
 
