@@ -69,6 +69,7 @@ class App extends Component {
       map:false,
       btnguardar:true,
       news:false,
+      finalize:false
      
    
     });
@@ -82,6 +83,7 @@ class App extends Component {
       map:false,
       btnguardar:true,
       news:false,
+      finalize:false
    
     });
 
@@ -95,6 +97,8 @@ class App extends Component {
       map:true,
       login:false,
       news:true,
+      btnguardar:false,
+      finalize:false
    
     });
 
@@ -110,6 +114,7 @@ class App extends Component {
     login:false,
     modal:false,
     btnguardar:false,
+    finalize:false
  
   });
   //  
