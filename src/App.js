@@ -3,7 +3,7 @@ import Map from './Components/Map/Map';
 import User from './Components/User/User'
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
-import Login from './Components/Login/Login'
+import  RouteSave from './Components/RouteSave/RouteSave'
 
 
 class App extends Component {
@@ -30,7 +30,7 @@ class App extends Component {
     this.functionCoordinates = this.functionCoordinates.bind(this);
     this.functionUser = this.functionUser.bind(this);
     this.functionMap = this.functionMap.bind(this);
-  
+    this.functionLogin = this.functionLogin.bind(this);
   }
 
 
@@ -39,11 +39,23 @@ class App extends Component {
     ...this.state,
     user:true,
     map:false,
+    login:false,
  
   });
   //  
 }
 
+functionLogin(){
+  this.setState({
+  ...this.state,
+  login:true,
+  user:false,
+  map:false,
+ 
+
+});
+//  
+}
 functionMap(){
   this.setState({
   ...this.state,
@@ -58,7 +70,8 @@ functionMap(){
     this.setState({
       ...this.state,
       map:true,
-      user:false
+      user:false,
+      login:false
     });
     if (navigator.geolocation) {
       console.log(navigator.geolocation)
@@ -132,7 +145,7 @@ functionMap(){
                 <User/>
             }
         
-        {this.state.map &&
+        {this.state.map && 
                 
                 <Map
                   app_id={this.state.app_id}
@@ -141,9 +154,12 @@ functionMap(){
                   lng="-70.6693"
                   zoom="13"
                   startPoint={this.state.startPoint}
-                  endPoint={this.state.endPoint}/>
+                  endPoint={this.state.endPoint}
+                  login={this.functionLogin}/>
               
-            }      
+            }  
+             {this.state.login && 
+             < RouteSave/>   }
 
       
       

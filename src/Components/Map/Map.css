@@ -56,22 +56,45 @@ ul li{
 }
 
 ul li a{
-	background-color:#00BCD4;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-	width:60px;
-	height:60px;
-    display:block;
+    background-color: #00BCD4;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-bottom: 45px;
     margin-right: -31px;
 }
 
-ul:hover{
-	visibility:visible!important;
-	opacity:1!important;
+.btnIcon{
+    
+        margin-bottom: -37px;
+    
+
+}
+.btn{
+    margin-bottom: 45px;
+    margin-right: -31px;
+    padding-top: 8px;
+    font-size: 30px;
+    margin-right: -6px;
+    
 }
 
+.fas.fa-share-alt{
+    padding-top: 15px;
+    font-size: 30px;
+    margin-right: 0px;
+}
+
+ ul:hover{
+	visibility:visible!important;
+    opacity:1!important;
+    
+    
+} 
 
 .my-float{
 	font-size:24px;
@@ -82,10 +105,10 @@ a#menu-share + ul{
   visibility: hidden;
 }
 
-a#menu-share:hover + ul{
+ a#menu-share:hover + ul{
   visibility: visible;
   animation: scale-in 0.5s;
-}
+} 
 
 a#menu-share i{
 	animation: rotate-in 0.5s;
