@@ -1,0 +1,34 @@
+.img{
+    width: 100%;
+    height: 289px;
+    margin-top: 73px;
+}
+.tittle{
+    font-size: 20px;
+   
+    margin: 20px;
+    color: #00BCD4;
+}
+
+.imgShare {
+     width: 100%;
+    margin-left: -15px;
+}
+.input{
+    margin-left: 24px;
+}
+.input2{
+    margin-left: 14px;
+}
+.btnCancelar{
+    margin: 7px;
+    background-color: #00BCD4;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.containerBtn{
+  
+    margin-left: 103px;
+    margin-top: 10px;
+}

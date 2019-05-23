@@ -3,8 +3,9 @@ import Map from './Components/Map/Map';
 import Profile from './Components/Profile/Profile'
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
+import  FormSave from './Components/FormSave/FormSave'
+import Share from './Components/Share/Share'
 import  RouteSave from './Components/RouteSave/RouteSave'
-// import Share from './Components/Share/Share'
 import News from './Components/News/News'
 import Modal from './Components/Modal/Modal'
 
@@ -23,7 +24,9 @@ class App extends Component {
       share:false,
       news:false,
       modal:false,
-      btnRouteSave: false,
+      finalize:false,
+       btnRouteSave: false,
+
       startPoint: {
         lat: '',
         long: '',
@@ -43,6 +46,7 @@ class App extends Component {
     this.functionModal = this.functionModal.bind(this);
     this.functionCloseModal = this.functionCloseModal.bind(this);
     this.functionGuardar = this.functionGuardar.bind(this);
+    this. functionfinalize = this. functionfinalize.bind(this);
     this.seeRouteSave=this.seeRouteSave.bind(this);
   }
 
@@ -56,9 +60,26 @@ class App extends Component {
       share:false,
       news:false,
       modal:false,
+      finalize:false
     })
+
   }
 
+  functionfinalize(){
+    this.setState({
+      ...this.state,
+      modal:false,
+      share:false,
+      user:false,
+      map:false,
+      btnguardar:false,
+      news:false,
+      finalize:true,
+      btnRouteSave:false,
+     
+   
+    });
+  }
   functionGuardar(){
     this.setState({
       ...this.state,
@@ -68,12 +89,11 @@ class App extends Component {
       map:false,
       btnguardar:true,
       news:false,
-      btnRouteSave: false
-
-     
-   
+     finalize:false,
+     btnRouteSave: false
     });
   }
+
   functionCloseModal(){
     this.setState({
       ...this.state,
@@ -83,12 +103,10 @@ class App extends Component {
       map:false,
       btnguardar:true,
       news:false,
-      btnRouteSave: false,
-
-   
+     finalize:false,
+     btnRouteSave: false,
     });
-
-  }
+}
   functionModal(){
     this.setState({
       ...this.state,
@@ -97,9 +115,10 @@ class App extends Component {
       user:false,
       map:true,
       login:false,
+      news:true,
+      btnguardar:false,
+      finalize:false,
       btnRouteSave: false,
-
-   
     });
 
   }
@@ -114,10 +133,9 @@ class App extends Component {
     login:false,
     modal:false,
     btnguardar:false,
-    btnRouteSave: false
-
- 
-  });
+    finalize:false,
+     btnRouteSave: false
+    });
   //  
 }
 
@@ -159,6 +177,7 @@ functionMap(){
   ...this.state,
   map:true,
   user:false,
+  btnRouteSave:false,
 
 });
 //  
@@ -263,10 +282,10 @@ functionMap(){
               
             }  
              {this.state.btnguardar && 
-             < RouteSave/>   }
+             < FormSave finalize={this.functionfinalize}/>   }
 
-            {/* {this.state.share && 
-            < Share/>   } */}
+             {this.state.finalize && 
+            <Share/>   } 
 
             {this.state.news && 
             < News/>   }
