@@ -46,7 +46,7 @@ class App extends Component {
     this.functionModal = this.functionModal.bind(this);
     this.functionCloseModal = this.functionCloseModal.bind(this);
     this.functionGuardar = this.functionGuardar.bind(this);
-    this. functionfinalize = this. functionfinalize.bind(this);
+    this.functionfinalize = this.functionfinalize.bind(this);
     this.seeRouteSave=this.seeRouteSave.bind(this);
   }
 
