@@ -8,7 +8,7 @@ import Share from './Components/Share/Share'
 import  RouteSave from './Components/RouteSave/RouteSave'
 import News from './Components/News/News'
 import Modal from './Components/Modal/Modal'
-
+// import Screen from './Components/Screen/Screen'
 
 
 class App extends Component {
@@ -25,6 +25,7 @@ class App extends Component {
       news:false,
       modal:false,
       finalize:false,
+      screen:true,
        btnRouteSave: false,
 
       startPoint: {
@@ -48,7 +49,23 @@ class App extends Component {
     this.functionGuardar = this.functionGuardar.bind(this);
     this. functionfinalize = this. functionfinalize.bind(this);
     this.seeRouteSave=this.seeRouteSave.bind(this);
+    // this.functionScreen=this.functionScreen.bind(this);
   }
+  // functionScreen(){
+  //   this.setState({
+  //     ...this.state,
+  //     user:true,
+  //     map:true,
+  //     btnguardar:true,
+  //     share:true,
+  //     news:true,
+  //     modal:false,
+  //     finalize:false,
+  //     screen:false,
+  //      btnRouteSave: true,
+  //   })
+
+  // }
 
   seeRouteSave(){
     this.setState({
@@ -60,7 +77,8 @@ class App extends Component {
       share:false,
       news:false,
       modal:false,
-      finalize:false
+      finalize:false,
+      screen:false,
     })
 
   }
@@ -76,6 +94,7 @@ class App extends Component {
       news:false,
       finalize:true,
       btnRouteSave:false,
+      screen:false,
      
    
     });
@@ -90,7 +109,8 @@ class App extends Component {
       btnguardar:true,
       news:false,
      finalize:false,
-     btnRouteSave: false
+     btnRouteSave: false,
+     screen:false,
     });
   }
 
@@ -105,6 +125,7 @@ class App extends Component {
       news:false,
      finalize:false,
      btnRouteSave: false,
+     screen:false,
     });
 }
   functionModal(){
@@ -115,10 +136,11 @@ class App extends Component {
       user:false,
       map:true,
       login:false,
-      news:true,
+      news:false,
       btnguardar:false,
       finalize:false,
       btnRouteSave: false,
+      screen:false,
     });
 
   }
@@ -134,7 +156,8 @@ class App extends Component {
     modal:false,
     btnguardar:false,
     finalize:false,
-     btnRouteSave: false
+     btnRouteSave: false,
+     screen:false,
     });
   //  
 }
@@ -164,6 +187,7 @@ class App extends Component {
     modal:false,
     btnguardar:false,
     btnRouteSave: false,
+    screen:false,
 
 
  
@@ -178,17 +202,19 @@ functionMap(){
   map:true,
   user:false,
   btnRouteSave:false,
-
+  screen:false,
 });
 //  
 }
 
   componentDidMount() {
+    
     this.setState({
       ...this.state,
       map:true,
       user:false,
       login:false
+    
     });
     if (navigator.geolocation) {
       console.log(navigator.geolocation)
@@ -252,10 +278,8 @@ functionMap(){
   render() {
     return (
       <div className="App">
-      
-
-       
-      
+         {/* <Screen onclikscreen={this.functionScreen}/> */}
+         
         <Navbar  coordinates={this.functionCoordinates}/>
         {this.state.user &&
                 
@@ -286,6 +310,7 @@ functionMap(){
 
              {this.state.finalize && 
             <Share/>   } 
+          
 
             {this.state.news && 
             < News/>   }
@@ -297,9 +322,11 @@ functionMap(){
           
       
       
+
        <Footer onClik={this.functionUser}
        map={this.functionMap}
        news={this.functionNews}/>
+      
 
      
 
