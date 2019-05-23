@@ -1,24 +1,29 @@
-.img{
+.RouteSave{
+    font-family: 'Roboto Slab', serif;
+}
+
+/* .img{
     width: 100%;
     height: 289px;
     margin-top: 73px;
-}
+} */
 .tittle{
     font-size: 20px;
-   
     margin: 20px;
     color: #00BCD4;
 }
 
 .imgShare {
-     width: 100%;
+    width: 100%;
     margin-left: -15px;
 }
 .input{
     margin-left: 24px;
+    font-size:16px;
 }
 .input2{
-    margin-left: 14px;
+    margin-left: 10px;
+    font-size:16px;
 }
 .btnCancelar{
     margin: 7px;
@@ -26,9 +31,26 @@
     color: white;
     border: none;
     border-radius: 3px;
+    width: 7rem;
+    height: 2rem;
+    font-size: 17px;
 }
 .containerBtn{
-  
-    margin-left: 103px;
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+input[type=checkbox] {
+  transform: scale(2);
+  margin-right: 5px;
+}
+
+input[type=radio] {
+    transform: scale(2);
+    margin-right: 5px;
+  }
+
+#seconInput{
     margin-top: 10px;
 }
