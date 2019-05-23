@@ -8,9 +8,9 @@ class RouteSave extends Component{
         
         return(
             <div className="RouteSave">
-                
-              <img className="img" src="https://i.ibb.co/BtZq7Dp/ruta.jpg" alt="ruta" border="0"/>
-              <p className="tittle" >Tu ruta ha sido guardada</p>
+                <img className="imgShare" src="https://i.ibb.co/Fb34MFX/routacity.png" alt="routacity" border="0"/>
+             
+              <p  >Tu ruta ha sido guardada</p>
         </div>
 
         )
