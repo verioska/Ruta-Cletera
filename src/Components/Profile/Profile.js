@@ -16,9 +16,15 @@ class Profile extends Component{
             </div>
 
             <div id="profileRoutes">
-            <button id="lastRoutes"><img id="lastRouteImg" src="https://i.ibb.co/bLCbHjy/route-1.png" alt="routeIcon"/>ULTIMOS VIAJES</button>
-            <button id="myRoutes"><img id="saveImg" src="https://i.ibb.co/92vXgTF/floppy-disk-1.png" alt="saveIcon"/>RUTAS GUARDADAS</button>
+              <button onClick={this.props.btnSaveRoute} id="myRoutes"><img id="saveImg" src="https://i.ibb.co/92vXgTF/floppy-disk-1.png" alt="saveIcon"/>RUTAS GUARDADAS</button>
+            </div>
 
+            <div id="lastRoute">
+           
+            <p id="textLastRoute">Tu último viaje lo realizaste<br/>
+             el día 24-05 a las 07:30, <br/>
+            entre Providencia y Recoleta, <br/>
+            recorriste 10km.</p>
             </div>
     
                

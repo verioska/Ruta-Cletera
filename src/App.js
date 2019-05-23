@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import  FormSave from './Components/FormSave/FormSave'
 import Share from './Components/Share/Share'
+import  RouteSave from './Components/RouteSave/RouteSave'
 import News from './Components/News/News'
 import Modal from './Components/Modal/Modal'
 
@@ -24,6 +25,8 @@ class App extends Component {
       news:false,
       modal:false,
       finalize:false,
+       btnRouteSave: false,
+
       startPoint: {
         lat: '',
         long: '',
@@ -44,6 +47,22 @@ class App extends Component {
     this.functionCloseModal = this.functionCloseModal.bind(this);
     this.functionGuardar = this.functionGuardar.bind(this);
     this. functionfinalize = this. functionfinalize.bind(this);
+    this.seeRouteSave=this.seeRouteSave.bind(this);
+  }
+
+  seeRouteSave(){
+    this.setState({
+      ...this.state,
+      btnRouteSave:true,
+      user:false,
+      map:false,
+      btnguardar:false,
+      share:false,
+      news:false,
+      modal:false,
+      finalize:false
+    })
+
   }
 
   functionfinalize(){
@@ -56,6 +75,7 @@ class App extends Component {
       btnguardar:false,
       news:false,
       finalize:true,
+      btnRouteSave:false,
      
    
     });
@@ -69,11 +89,11 @@ class App extends Component {
       map:false,
       btnguardar:true,
       news:false,
-      finalize:false
-     
-   
+     finalize:false,
+     btnRouteSave: false
     });
   }
+
   functionCloseModal(){
     this.setState({
       ...this.state,
@@ -83,11 +103,10 @@ class App extends Component {
       map:false,
       btnguardar:true,
       news:false,
-      finalize:false
-   
+     finalize:false,
+     btnRouteSave: false,
     });
-
-  }
+}
   functionModal(){
     this.setState({
       ...this.state,
@@ -98,8 +117,8 @@ class App extends Component {
       login:false,
       news:true,
       btnguardar:false,
-      finalize:false
-   
+      finalize:false,
+      btnRouteSave: false,
     });
 
   }
@@ -114,9 +133,9 @@ class App extends Component {
     login:false,
     modal:false,
     btnguardar:false,
-    finalize:false
- 
-  });
+    finalize:false,
+     btnRouteSave: false
+    });
   //  
 }
 
@@ -144,6 +163,9 @@ class App extends Component {
     news:false,
     modal:false,
     btnguardar:false,
+    btnRouteSave: false,
+
+
  
   });
   //  
@@ -155,6 +177,7 @@ functionMap(){
   ...this.state,
   map:true,
   user:false,
+  btnRouteSave:false,
 
 });
 //  
@@ -236,8 +259,11 @@ functionMap(){
         <Navbar  coordinates={this.functionCoordinates}/>
         {this.state.user &&
                 
-                <Profile/>
+                <Profile
+                btnSaveRoute={this.seeRouteSave}/>
             }
+
+            {this.state.btnRouteSave && <RouteSave/>}
         
         {this.state.map && 
                 
