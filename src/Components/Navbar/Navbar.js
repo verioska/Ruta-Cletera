@@ -37,7 +37,7 @@ class Navbar extends Component {
  <nav className="navbar navbar-inverse"> 
 
 
- <a href=".#"><img id="logo" src="https://i.ibb.co/yk5DgYT/Group-1-1.png" alt="Logotype" border="0"/></a>
+<a href=".#"><img id="logo" src="https://i.ibb.co/yk5DgYT/Group-1-1.png" alt="Logotype" border="0"/></a>
 <div className="container-fluid">
 <div className="navbar-header">  
     
@@ -47,7 +47,7 @@ class Navbar extends Component {
     <span><i className="fas fa-search"></i></span>
     </button>
 
-    {/* <span><i className="fas fa-ellipsis-v"></i></span> */}
+   
     </div>
 
 
