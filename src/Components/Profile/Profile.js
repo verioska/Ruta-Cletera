@@ -16,8 +16,8 @@ class Profile extends Component{
             </div>
 
             <div id="profileRoutes">
-            <button id="lastRoutes">ULTIMOS VIAJES</button>
-            <button id="myRoutes">RUTAS GUARDADAS</button>
+            <button id="lastRoutes"><img id="lastRouteImg" src="https://i.ibb.co/bLCbHjy/route-1.png" alt="routeIcon"/>ULTIMOS VIAJES</button>
+            <button id="myRoutes"><img id="saveImg" src="https://i.ibb.co/92vXgTF/floppy-disk-1.png" alt="saveIcon"/>RUTAS GUARDADAS</button>
 
             </div>
     
