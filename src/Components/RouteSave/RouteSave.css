@@ -1,16 +1,20 @@
 .save{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-#saveRoute{
+#saveRoute, #saveRoute2, #saveRoute3{
     width: 80%;
     height: 200px;
     border: rgb(150, 148, 148) 0.5px solid;
     margin-top: 30px;
     justify-content: center;
     margin: 0 auto;
-    
 }
+
+#saveRoute2{
+    margin-top: 20px;
+}
+
 
 .imgMap{
     width: 100%;
@@ -21,6 +25,21 @@
     color:#00BCD4;
     font-size: 25px;
     margin-left: 120px;
-   
 }
 
+#textSave{
+    margin-top:10px;
+    margin-bottom:20px;
+    font-size: 25px;
+    color:grey;
+    text-align: center;
+}
+
+.textLabel{
+    color:#212121;
+    font-family: 'Roboto Slab', serif;
+}
+
+#iconShareSquare{
+    margin-left: 145px; 
+}

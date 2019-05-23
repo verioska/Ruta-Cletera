@@ -39,7 +39,7 @@
     margin-top: 30px;
     background-color: #fff;
     text-align: center;
-    font-family: open sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 18px;
     color: #212121;
 }
@@ -67,6 +67,7 @@
 #textLastRoute{
     margin-top: 30px;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
 
 .fas.fa-route{

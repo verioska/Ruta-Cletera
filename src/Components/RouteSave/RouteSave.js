@@ -9,19 +9,54 @@ class RouteSave extends Component {
         return (
             <div className="save">
 
+
+                <h3 id="textSave">Mis rutas</h3>
                 <div id="saveRoute">
 
                     <div>
                         <img className="imgMap" src="https://i.ibb.co/6X4SMGP/Captura-de-pantalla-2019-05-22-a-las-13-44-08.png" alt="" />
                     </div>
 
-                        <div className="footerMap">
+                    <div className="footerMap">
                         <p className="textLabel">Ruta turistica</p>
                         <i class="far fa-share-square"></i>
 
                     </div>
 
                 </div>
+
+                <div id="saveRoute2">
+
+                    <div>
+                        <img className="imgMap" src="https://i.ibb.co/ygzZQNs/Captura-de-pantalla-2019-05-22-a-las-13-40-38.png" alt="" />
+                    </div>
+
+                    <div className="footerMap">
+                        <p className="textLabel">Ruta diaria</p>
+                        <i id="iconShareSquare"class="far fa-share-square"></i>
+
+                    </div>
+
+                </div>
+
+                <div id="saveRoute3">
+
+                    <div>
+                        <img className="imgMap" src="https://i.ibb.co/Gdf2Lkt/Captura-de-pantalla-2019-05-22-a-las-13-42-45.png" alt="" />
+                    </div>
+
+                    <div className="footerMap">
+                        <p className="textLabel">Ruta diaria</p>
+                        <i id="iconShareSquare"class="far fa-share-square"></i>
+
+                    </div>
+
+                </div>
+
+             
+
+
+
 
             </div>
 
