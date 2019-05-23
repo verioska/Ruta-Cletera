@@ -8,22 +8,39 @@
 }
 
 .modal2{
-     
     width: 320px;
     height: 149px;
-  
     display: flex;
     justify-content: center;
     margin: 0 auto;
     background-color: white;
     z-index: 1000;
 }
+
 .container1{
     margin-top: 212px;
 }
+
 .btnGuardar{
-    width: 77px;
-    height: 34px;
-    /* top: 32px; */
-    margin-top: 52px;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 50px;   
+    /* margin-left: 70px;   */
+    border: 0.5px grey solid;
+    background-color: #00BCD4;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+#textModal{
+    color:grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+#headerModal{
+    width: 100%;
+
 }

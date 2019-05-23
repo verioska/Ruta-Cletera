@@ -8,8 +8,14 @@ class Modal extends Component{
             <div onClick={this.props.closeModal}className="modal1">
              <div className="container1">
               <div className="modal2">
-                 Viaje Terminado
-                 <button onClick={this.props.btnguardar} className="btnGuardar">Guardar</button>
+
+               
+                <div>
+                 <button onClick={this.props.btnguardar} className="btnGuardar">Guardar Ruta</button>
+                </div>
+
+                
+
               </div>
             </div>   
               

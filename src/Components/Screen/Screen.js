@@ -9,7 +9,7 @@ class Screen extends Component{
         return(
             <div>
                 <div>
-                    <img onClick={this.props.onclikscreen} src="https://i.ibb.co/rxjXz66/Ruta-Cletera.png" alt="Ruta-Cletera" border="0"/>
+                    <img className="imgScreenOn" onClick={this.props.onclikscreen} src="https://i.ibb.co/rxjXz66/Ruta-Cletera.png" alt="Ruta-Cletera" border="0"/>
             
                 </div>
             </div>

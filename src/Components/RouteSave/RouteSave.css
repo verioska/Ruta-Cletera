@@ -2,7 +2,7 @@
     margin-top: 20px;
 }
 
-#saveRoute, #saveRoute2, #saveRoute3{
+#saveRoute, #saveRoute2{
     width: 80%;
     height: 200px;
     border: rgb(150, 148, 148) 0.5px solid;
@@ -15,6 +15,9 @@
     margin-top: 20px;
 }
 
+#saveRoute3{
+    margin-bottom: 20px;
+}
 
 .imgMap{
     width: 100%;
