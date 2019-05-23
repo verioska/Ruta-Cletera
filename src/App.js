@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar';
 import  RouteSave from './Components/RouteSave/RouteSave'
 import Share from './Components/Share/Share'
 import News from './Components/News/News'
+import Modal from './Components/Modal/Modal'
 
 
 
@@ -18,9 +19,10 @@ class App extends Component {
       app_code: "4Uosgp7aDFaZc0VoxXZTEg",
       user:false,
       map:false,
-      login:false,
+      btnguardar:false,
       share:false,
       news:false,
+      modal:false,
       startPoint: {
         lat: '',
         long: '',
@@ -35,9 +37,48 @@ class App extends Component {
     this.functionCoordinates = this.functionCoordinates.bind(this);
     this.functionUser = this.functionUser.bind(this);
     this.functionMap = this.functionMap.bind(this);
-    this.functionLogin = this.functionLogin.bind(this);
-    this.functionShare = this.functionShare.bind(this);
+    // this.functionShare = this.functionShare.bind(this);
     this.functionNews = this.functionNews.bind(this);
+    this.functionModal = this.functionModal.bind(this);
+    this.functionCloseModal = this.functionCloseModal.bind(this);
+    this. functionGuardar = this. functionGuardar.bind(this);
+  }
+
+  functionGuardar(){
+    this.setState({
+      ...this.state,
+      modal:false,
+      share:false,
+      user:false,
+      map:false,
+      btnguardar:true,
+     
+   
+    });
+  }
+  functionCloseModal(){
+    this.setState({
+      ...this.state,
+      modal:false,
+      share:false,
+      user:false,
+      map:false,
+      btnguardar:true,
+   
+    });
+
+  }
+  functionModal(){
+    this.setState({
+      ...this.state,
+      modal:true,
+      share:false,
+      user:false,
+      map:true,
+      login:false,
+   
+    });
+
   }
 
   functionNews(){
@@ -48,23 +89,26 @@ class App extends Component {
     user:false,
     map:false,
     login:false,
+    modal:false,
+    btnguardar:false,
  
   });
   //  
 }
 
-  functionShare(){
-    this.setState({
-    ...this.state,
-    share:true,
-    user:false,
-    map:false,
-    login:false,
-    news:false,
+//   functionShare(){
+//     this.setState({
+//     ...this.state,
+//     share:true,
+//     user:false,
+//     map:false,
+//     login:false,
+//     news:false,
+//     modal:false
  
-  });
-  //  
-}
+//   });
+//   //  
+// }
 
   functionUser(){
     this.setState({
@@ -74,24 +118,14 @@ class App extends Component {
     login:false,
     share:false,
     news:false,
+    modal:false,
+    btnguardar:false,
  
   });
   //  
 }
 
-functionLogin(){
-  this.setState({
-  ...this.state,
-  login:true,
-  user:false,
-  map:false,
-  share:false,
-  news:false,
- 
 
-});
-//  
-}
 functionMap(){
   this.setState({
   ...this.state,
@@ -191,19 +225,25 @@ functionMap(){
                   zoom="13"
                   startPoint={this.state.startPoint}
                   endPoint={this.state.endPoint}
-                  login={this.functionLogin}
-                  share={this.functionShare}/>
+                 
+                  // share={this.functionShare}
+                  modal={this.functionModal}
+                  />
               
             }  
-             {this.state.login && 
+             {this.state.btnguardar && 
              < RouteSave/>   }
 
-            {this.state.share && 
-            < Share/>   }
+            {/* {this.state.share && 
+            < Share/>   } */}
 
             {this.state.news && 
             < News/>   }
-             
+             {
+               this.state.modal &&
+               <Modal closeModal={this.functionCloseModal}
+               btnguardar={this.functionGuardar}/>
+             }
           
       
       

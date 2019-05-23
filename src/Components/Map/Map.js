@@ -131,7 +131,7 @@ class Map extends Component {
      <div id="map" ref="here-map" style={{ width: '100%', height: '700px', background: '#00BCD4' }}>
 
         <a href=".#" className="float" id="menu-share">
-        <i class="far fa-stop-circle"></i>
+        <i onClick={this.props.modal} class="far fa-stop-circle"></i>
 
         </a>
         {/* <ul>
