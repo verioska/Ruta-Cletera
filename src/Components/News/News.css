@@ -1,6 +1,6 @@
 #recomendation, #recomendation2{
     width: 90%;
-    height: 215px;
+    height: 200px;
     border: rgb(150, 148, 148) 0.5px solid;
     margin-top: 30px;
     justify-content: center;
@@ -15,7 +15,7 @@
 
 .imgBike{
     width: 100%;
-    height: 150px;
+    height: 140px;
     justify-content: center;
     margin: 0 auto;
     border-top-left-radius: 10px;

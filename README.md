@@ -1,68 +1,74 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Hackaton Desafío Here
 
-## Available Scripts
 
-In the project directory, you can run:
+![](https://i.imgur.com/ikn6cPy.png)
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Con el aumento de personas y medios de transporte,  las ciudades viven consencuencias a diario. Problemas de traslado, poca accesibilidad y falta de cultura vial causan conflictos de convivencia en las vias.
 
-### `npm test`
+En esta oportunidad <strong>Here</strong> nos propone el desafío de crear una herramienta digital en conjunto a sus mapas para resolver alguna problemática urbana.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<strong>Integrantes:</strong> Johanna Goenaga FE | Verioska Ramirez FE | Francisca Mora UX
+<strong>Planificación: </strong> [Plataforma Trello](https://trello.com/b/pkn6zR5K/hackaton-here)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+<br>
+<br>
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Ciclismo en Chile
 
-### `npm run eject`
+Según cifras del Ministerio de Medio Ambiente, en los últimos 10 años, la circulación de ciclistas ha aumentado un 868%. Se realizan 1,2 millones de viajes diarios en este tipo de transporte y a mayoría de ellos corresponden a traslados al trabajo o lugar de estudios.
+Esto, en combinación a lo anteriormente mencionado, resulta en complicaciones que viven a diario quienes eligen este medio de transporte como ciclovías en mal estado y problemas de convivencia vial.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Actualmente existen medidas que buscan reparar esta deuda vial existente con los ciclistas, pero, según la voz de los propios usuarios, se tratarían de medidas paliativas que no necesariamente resuelven la problemática al ser esta misma demasiado compleja, por lo que se necesita del actuar de varias entidades como lo son el Ministerio de Transporte y el Ministerio de Obras Públicas.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Ciclistas organizados
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Según como se pudo identificar a través de entrevistas de usuario, la cultura ciclista es más bien colaborativa y existen actualmente organizaciones que buscan incidir en el diseño de ciudades a escala humana, además de visibilizar a los ciclistas como entes participativos; además de compartir rutas a través de mapas para así ayudar a los menos expertos.
 
-## Learn More
+Lamentablemente, estas buenas iniciativas pasan desapercibidas del ojo público y no alcanzan la visibilización que merecen según su importancia en el área, ya que son pequeñas células. Aunque, el que exista un ambiente colaborativo es una gran oportunidad y representa la motivación del desarrollo de este proyecto.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Nuestra propuesta
 
-### Code Splitting
+![](https://i.imgur.com/auJ49Z3.png)![](https://i.imgur.com/IE11Uvf.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Creamos <strong>RutaCletera</strong>, una app que permite a ciclistas compartir rutas e información relevante del camino como vias en mal estado, estacionamiento de bicicletas, entre otras características.
 
-### Analyzing the Bundle Size
+<br>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+![](https://i.imgur.com/a2890Xg.png)![](https://i.imgur.com/lJdnJYi.png)
 
-### Making a Progressive Web App
+<br>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Con esta interfaz los usuarios no solo podrán moverse por la ciudad de forma rápida y segura, sino que a la vez es una fuente de feedback a tiempo real que puede ser aprovechado por las municipalidades con el fin de generar mejoras públicas y así trabajar en conjunto hacia una ciudad mejor conectada.
 
-### Advanced Configuration
+En el siguiente link puedes encontrar el resultado de nuestra primera iteración de este producto:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+[RutaCletera](https://verioska.github.io/Ruta-Cletera/#)
 
-### Deployment
+<br>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Testeos de usabilidad
+
+Con el fin de entregar el mejor producto, sometimos nuestro prototipo a testeos de usabilidad para así poder adaptarnos más aún a nuestros usuarios.
+Los resultados de nuestro testeo lo puedes encontrar en el siguiente enlace:
+
+[Resultados testeo de usabilidad](https://docs.google.com/document/d/1-ZXm-lT3h7Yu6UY29RR5kVYfztxms4ZLpQyRWD06pGI/edit?usp=sharing).
+
+Luego de los cambios realizados, se iteró sobre el diseño y arquitectura de la información en nuestro prototipo, que puedes revisar a continuación:
+
+[Segunda iteración prototipo navegable](https://www.figma.com/proto/eeciET0MpW89zogI1Kprq1Rm/Untitled?node-id=72%3A0&scaling=scale-down)
+
+
+
