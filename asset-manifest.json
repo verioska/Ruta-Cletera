@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Ruta-Cletera/static/css/main.fdcf2505.chunk.css",
+    "main.css": "/Ruta-Cletera/static/css/main.32758578.chunk.css",
     "main.js": "/Ruta-Cletera/static/js/main.726b35d9.chunk.js",
     "main.js.map": "/Ruta-Cletera/static/js/main.726b35d9.chunk.js.map",
     "runtime~main.js": "/Ruta-Cletera/static/js/runtime~main.ac44f26f.js",
@@ -8,8 +8,8 @@
     "static/js/2.d371c7e7.chunk.js": "/Ruta-Cletera/static/js/2.d371c7e7.chunk.js",
     "static/js/2.d371c7e7.chunk.js.map": "/Ruta-Cletera/static/js/2.d371c7e7.chunk.js.map",
     "index.html": "/Ruta-Cletera/index.html",
-    "precache-manifest.6b4748f3e465dc4f33af202f855232fb.js": "/Ruta-Cletera/precache-manifest.6b4748f3e465dc4f33af202f855232fb.js",
+    "precache-manifest.4ef6ddd02dd383519330a1393a0834f3.js": "/Ruta-Cletera/precache-manifest.4ef6ddd02dd383519330a1393a0834f3.js",
     "service-worker.js": "/Ruta-Cletera/service-worker.js",
-    "static/css/main.fdcf2505.chunk.css.map": "/Ruta-Cletera/static/css/main.fdcf2505.chunk.css.map"
+    "static/css/main.32758578.chunk.css.map": "/Ruta-Cletera/static/css/main.32758578.chunk.css.map"
   }
 }
