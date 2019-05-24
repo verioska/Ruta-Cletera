@@ -351,6 +351,7 @@ functionMap(){
                   lng="-70.6693"
                   zoom="13"
                   startPoint={this.state.startPoint}
+                  
                   endPoint={this.state.endPoint}
                  
                   // share={this.functionShare}
