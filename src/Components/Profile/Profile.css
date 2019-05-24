@@ -36,7 +36,7 @@
     display:flex;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: -25px;
     background-color: #fff;
     text-align: center;
     font-family: 'Roboto Slab', serif;
@@ -55,7 +55,7 @@
 
 #lastRoute{
     border: #969494 0.5px solid;
-    width: 80%;
+    width: 83%;
     height: 150px;
     border-radius: 5px;
     display:flex;

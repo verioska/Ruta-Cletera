@@ -16,6 +16,7 @@
 .imgShare {
     width: 100%;
     margin-left: -15px;
+    margin-top: -20px;
 }
 .input{
     margin-left: 24px;
@@ -34,6 +35,7 @@
     width: 7rem;
     height: 2rem;
     font-size: 17px;
+    margin-top: 5px;
 }
 .containerBtn{
     display:flex;
@@ -42,12 +44,12 @@
 }
 
 input[type=checkbox] {
-  transform: scale(2);
+  transform: scale(1.2);
   margin-right: 5px;
 }
 
 input[type=radio] {
-    transform: scale(2);
+    transform: scale(1.2);
     margin-right: 5px;
   }
 
